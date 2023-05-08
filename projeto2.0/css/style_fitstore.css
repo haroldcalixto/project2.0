@@ -1,0 +1,171 @@
+/*
+    Trabalho Prático 1 - HTML/CSS - 09/05/2023;
+    Disciplina: Tecnologias Web;
+    Professor: Fischer Ferreira;
+    Semestre: 2023.1;
+
+    Equipe:
+    Aluno: Harold Calixto de Albuquerque - Matrícula: 499735;
+    Aluno: Alexandre Gomes Camelo - Matrícula: 504315;
+    Aluno: Joaquim Walisson Portela de Sousa - Matrícula: 472152;
+
+    Projeto: Fit Store - E-commerce de produtos esportivos;
+*/
+
+body{
+    background-color: #f5f5f5;
+    padding: 0 80px 0 80px;
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "logo titulo linguagem";
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    margin-left: 50px;
+    margin-top: 12px;
+    grid-area: logo;
+}
+
+.logo:hover { /*Aumento interativo da imagem*/
+    transform: scale(1.2);
+    transition: 200ms;
+}
+
+.titulo {
+    color: #07133D;
+    font-size: 15px;
+    justify-content: flex-start;
+    grid-area: titulo;
+}
+
+.linguagem {
+    justify-content: end;
+    margin-left: 400px;
+    grid-area: linguagem;
+}
+
+button {
+    background-color: #07133D; 
+    color: #fff; 
+    margin-top: 5px;
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    border: none; 
+    font-size: 15px; 
+}
+
+button:hover { 
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.rotas{ 
+    display: flex;    
+    margin-top: 20px;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #07133D;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.botao{
+    transition: 200ms;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao:hover{
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+.paginas{
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Monteserrat';
+}
+
+.paginas:hover {
+    color: #07133D;
+}
+
+.box-pesquisar {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    box-shadow: 0px 0px 5px #ccc;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+    justify-content: center;
+}
+
+.box-pesquisa:focus {
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+.banner{
+    margin-top: 0.5vh;
+    height: 90vh;
+    width: auto;
+    background-image: url(images/male-feet-in-sneakers-running-on-the-treadmill-at-the-gym-exercise-concept.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5vw;
+}
+
+footer{
+    background-color:#07133D;
+    display:flex;
+    justify-content: center;
+    border-radius: 4vh;
+}
+
+.footer-informacoes{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
