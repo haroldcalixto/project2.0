@@ -18,12 +18,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style_fitstore.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
         <title>Fit Store</title>
     </head>
 
     <body>
         <header>
+
+            <div>
+                <img src="" alt="">
+            </div>
             <div class="inicio">
                 <div class="logo">
                     <img src="images/logo2.png" alt="fitstorelogo"> 
@@ -50,31 +55,97 @@
                 <div class="botao"> <a class="paginas">Feminino</a> </div>
                 <div class="botao"> <a class="paginas">Suplementos</a> </div>
                 <input type="text" class="box-pesquisar" placeholder="Pesquisar">
+            
             </div>
+
         </header>
 
-        <section class="banner"></section>
+        <div class="grid_banner">
+            <img class="banner" src="images/banner.png" alt="banner">
+        </div>
+        
+        <div class="area_principal">
+            <div class="descricao_produtos">
 
-        <footer>
-            <div class="footer-informacoes">
-                <h4>Contato:</h4>
-                <p>@fitstore</p>
-                <p>Fit Store</p>
-                <p>(99)9.9999-9999</p>
-                <p>fitstore@gmail.com</p>
+                <h1 class="text_darkblue">O que é a Fit Store?</h1>
+
+                <div class="descricao">
+                    <p>Lorem Ipsum is simply dummy text of the printing
+                         and typesetting industry. Lorem Ipsum has been
+                          the industry's standard dummy text ever since 
+                          the 1500s, when an unknown printer took a galley
+                           of type and scrambled it to make a type specimen 
+                           book. It has survived not only five centuries, but 
+                           also the leap into electronic typesetting, remaining 
+                           essentially unchanged. It was popularised in the 
+                           1960s with the release of Letraset sheets containing 
+                           Lorem Ipsum passages, and more recently with desktop 
+                           publishing software like Aldus PageMaker including versions 
+                           of Lorem Ipsum.
+                    </p>
+                </div>
+
+                <h1 class="text_darkblue">Adquira agora</h1>
+
+                <div class="produtos">
+                    <img class="image_produtos" src="images/tenis.png" alt="tenis">
+                    <img class="image_produtos" src="images/camisa_m.png" alt="camisa_m">
+                    <img class="image_produtos" src="images/camisa_f.png" alt="camisa_f">
+
+                    <button class="comprar">Comprar</button>
+                    <button class="comprar">Comprar</button>
+                    <button class="comprar">Comprar</button>
+
+                    <img class="image_produtos" src="images/tornozeleira.png" alt="tornozeleira">
+                    <img class="image_produtos" src="images/rolo_abdominal.png" alt="rolo_abdominal">
+                    <img class="image_produtos" src="images/suplemento.png" alt="suplemento">
+
+                    <button class="comprar">Comprar</button>
+                    <button class="comprar">Comprar</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+    
             </div>
-            <div class="footer-informacoes">
-                <h4>Produtos:</h4>
-                <p>Início</p>
-                <p>Acessórios</p>
-                <p>Masculino</p>
-                <p>Feminino</p>
-                <p>Suplementos</p>
+            <div class="navegacao">
+                <div class="video">
+                    <h1 class="text_white"> Veja mais</h1>
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/HQfF5XRVXjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <button class="compartilhar">Compartilhar</button>
+                </div>
+
+                <div>
+                    <h1 class="text_white">Informações</h1>
+                    <ul class="lista">
+                        <li><a href="#">Preciso de Ajuda</a></li>
+                        <li><a href="#">Outras Áreas</a></li>
+                        <li><a href="#">Atendimento ao Cliente</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-informacoes">
-                <h4>Localização</h4>
-                <p>Rua, número, bairro, cidade, CEP</p>
-            </div>
-        </footer>
+        </div>
+
+        <div class="promocoes">
+            <img class="image_promocao" src="images/promocao.png" alt="promocao">
+            <img class="produtos_carrossel" src="images/produtos_carrossel.png" alt="produtos_carrossel">
+        </div>
+
+       
     </body>
+
+    <footer>
+        <div class="footer-informacoes">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="footer-informacoes">
+            <h2>Contato:</h2>
+            <p class="p-info far fa-envelope email"> fitstore@gmail.com</p>
+            <p class="p-info fab fa-instagram instagram"> @fitstore</p>
+            <p class="p-info fab fa-whatsapp whatssapp"> (99)9.9999-9999</p>
+            <p class="p-info fab fa-twitter twitter"> @fitstore</p>
+        </div>
+        <div class="footer-informacoes">
+            <h2>Localização</h2>
+            <p class="p-info fab fa-google google-maps"> Rua Avenida Principal nº 50, Centro, Sobral, CEP: 60123-000</p>
+        </div>
+    </footer>
 </html>
