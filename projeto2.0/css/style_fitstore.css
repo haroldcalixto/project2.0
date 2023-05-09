@@ -12,28 +12,33 @@
     Projeto: Fit Store - E-commerce de produtos esportivos;
 */
 
+/* Estilos gerais*/
 body{
-    background-color: #f5f5f5;
-    padding: 0 80px 0 80px;
+    background-color: white;
+    width: 100%;
     margin-top: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, p {
     font-family: 'Roboto', sans-serif;
 }
 
-h4{
-    color: white;
+.text_darkblue {
+    color: #07133D;
 }
 
-p{
-    color: white;
+.text_white {
+    text-align: start;
+    margin-left: 20px;
+    color: #fff;
+    bottom: 0;
 }
+
+/* Estilos do Header */
 
 header{
     display: flex;
     flex-direction: column;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -57,7 +62,7 @@ header{
     grid-area: logo;
 }
 
-.logo:hover { /*Aumento interativo da imagem*/
+.logo:hover { 
     transform: scale(1.2);
     transition: 200ms;
 }
@@ -105,7 +110,7 @@ button:hover {
 .botao{
     transition: 200ms;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     margin-left: 50px;
     align-items: center;
     justify-content: center;
@@ -119,7 +124,7 @@ button:hover {
 .paginas{
     font-size: 1.2rem;
     color: white;
-    font-family: 'Monteserrat';
+    font-family: sans-serif;
 }
 
 .paginas:hover {
@@ -143,29 +148,226 @@ button:hover {
     box-shadow: 0px 0px 10px #aaa;
 }
 
-.banner{
-    margin-top: 0.5vh;
-    height: 90vh;
-    width: auto;
-    background-image: url(images/male-feet-in-sneakers-running-on-the-treadmill-at-the-gym-exercise-concept.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.5vw;
+.grid_banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner";
+
 }
 
-footer{
+/* Banner principal do site*/
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para a área Principal */
+.area_principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 150vh;
+    margin-top: 20px;
+    grid-template-areas:
+    "produtos navegacao";
+}
+
+.produtos_descricao {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 400px;
+    border-radius: 1px;
+    margin-right: 10px;
+}
+
+.descricao {
+    color: #07133D;
+    text-align: justify;
+}
+
+.produtos { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    " tenis camisa_m camisa_f imagem"
+    " comprar comprar comprar"
+    " tornozeleira rolo_abdominal suplemento"
+    " comprar comprar comprar"
+    ;
+    max-width: 15px;
+    margin-left: 70px;
+    align-items: center;
+    margin-right: 20px;
+    height: 100px;
+
+}
+
+.image_produtos {
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    width: 220px;
+    height: 280px;
+}
+
+
+.comprar {
+    background-color: green;
+    color: white;
+    border: none;
+    width: 220px;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.comprar:hover {
+    transform: scale(1.1);
+}
+
+.navegacao {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "";
+    background-color: #07133D;
+    margin-left: 15px;
+    border-radius: 10px; 
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.video {
+    top: 0;
+}
+
+.compartilhar {
+    background-color: white; 
+    color: blue; 
+    border: 1px solid blue; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+}
+
+.compartilhar:hover {
+    background-color: blue; 
+    color: white; 
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.lista {
+    list-style: none;
+    text-align: justify;
+  }
+  
+.lista li {
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.lista li:hover a:hover {
+    color: #07133D;
+    background-color: white;
+    transform: translateY(-2px);
+}
+  
+
+  
+/* Estilos para os bannners de promoções */
+.promocoes {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-areas: "promocoes" "produtos_carrossel";
+    max-width: 90%;
+    align-items: center;
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+  
+.image_promocao {
+    width: 80%;
+    height: 50px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.produtos_carrossel {
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
     background-color:#07133D;
     display:flex;
     justify-content: center;
-    border-radius: 4vh;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
 .footer-informacoes{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5vh;
-    padding-bottom: 5vh;
+    color: #fff;
+    font-family: sans-serif;
+    margin-left: 12vh;
+    padding-bottom: 2vh;
     padding-top: 5vh;
 }
+
+.p-info {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.email, .instagram, .whatssapp, .twitter, .google-maps {
+    font-size: 25px;
+}
+
+
+/* @media(min-width: 320px) and (max-width:767px){} */
